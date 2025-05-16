@@ -1,2 +1,2 @@
-# MPD_Python
-Python Package of Maximum Perception Distance
+# PCD_Python
+Python Package of Perception Characteristics Distance
