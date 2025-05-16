@@ -1,2 +1,2 @@
-# RPD_Python
-Python Package of Reliable Perception Distance
+# MPD_Python
+Python Package of Maximum Perception Distance
