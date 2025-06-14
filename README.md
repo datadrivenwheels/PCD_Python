@@ -63,5 +63,5 @@ If using this work, please cite:
 
 **Enjoy evaluating perception robustness with PCD!**
 
-[1]: https://arxiv.org/abs/2506.09217?utm_source=chatgpt.com "Perception Characteristics Distance: Measuring Stability and Robustness of Perception System in Dynamic Conditions under a Certain Decision Rule"
-[2]: [https://github.com/Kaggle/kaggle-api/blob/master/kaggle/api/kaggle_api_extended.py?utm_source=chatgpt.com "kaggle-api/kaggle/api/kaggle_api_extended.py at main - GitHub"](https://www.kaggle.com/datasets/datadrivenwheels/sensorrainfall)
+[1]: https://arxiv.org/abs/2506.09217
+[2]: https://www.kaggle.com/datasets/datadrivenwheels/sensorrainfall
