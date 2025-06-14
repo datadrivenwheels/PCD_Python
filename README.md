@@ -1,9 +1,9 @@
 # Perception Characteristics Distance (PCD)
 
 **“Perception Characteristics Distance: Measuring Stability and Robustness of Perception System in Dynamic Conditions under a Certain Decision Rule”**
-Boyu Jiang, Liang Shi, Zhengzhi Lin, Loren Stowe, Feng Guo (Jun 10, 2025) ([arxiv.org][1])
+Boyu Jiang, Liang Shi, Zhengzhi Lin, Loren Stowe, Feng Guo ([arxiv.org][1])
 
-This repository provides the official Python implementation of the Perception Characteristics Distance (PCD), a metric designed to evaluate the reliable detection range of perception systems under dynamic real-world conditions (e.g. varying weather), along with the associated **SensorRainFall** dataset.
+This repository provides the official Python implementation of the Perception Characteristics Distance (PCD), a metric designed to evaluate the reliable detection range of perception systems under dynamic real-world conditions (e.g. varying weather), along with the associated [**SensorRainFall**][2] dataset.
 
 ---
 
@@ -16,10 +16,10 @@ The performance of perception systems in autonomous driving systems (ADS) is str
 
 ## 🎯 Key Features
 
-* 🔍 **PCD Computation**: Implements heteroscedastic modeling of IoU×confidence vs. distance using penalized B‑spline regression and variance change-point detection ([themoonlight.io][2]).
-* 📈 **mPCD Evaluation**: Iterates across (y\_t, p\_t) threshold pairs to compute mPCD, enabling a comprehensive reliability profile.
+* 🔍 **PCD Computation**: Implements heteroscedastic modeling of IoU×confidence vs. distance using penalized B‑spline regression and variance change-point detection.
+* 📈 **mPCD Evaluation**: Iterates across threshold pairs ($y_t$, $p_t$) to compute mPCD, enabling a comprehensive reliability profile.
 * ☔ **SensorRainFall Support**: Processes data from clear and rainy driving scenarios for performance analysis.
-* 📊 **Model Comparison**: Facilitates evaluation of various object detection models (e.g., Deformable DETR, YOLOX) under different environmental conditions ([arxiv.org][3]).
+* 📊 **Model Comparison**: Facilitates evaluation of various object detection models (e.g., Deformable DETR, YOLOX) under different environmental conditions.
 
 ---
 
@@ -38,14 +38,8 @@ pip install -r requirements.txt
 
 ### Data Preparation
 
-* SensorRainFall dataset is available here: [https://www.kaggle.com/datasets/datadrivenwheels/sensorrainfall](https://www.kaggle.com/datasets/datadrivenwheels/sensorrainfall) ([arxiv.org][1])
+* [**SensorRainFall**][2] dataset is available in Kaggle.
 
-
----
-
-## 🧪 Reproducing Paper Results
-
-The benchmarks in the paper compare five leading models (Deformable DETR, Grounding DINO, DyHead, YOLOX, GLIP) under both clear and rainy conditions, showcasing distinct reliability degradations captured by mPCD that remain hidden to static metrics ([github.com][4], [arxiv.org][3]).
 
 ---
 
@@ -67,19 +61,7 @@ If using this work, please cite:
 
 ---
 
-## 📌 License
-
-Shared under the [MIT License](LICENSE). Refer to `requirements.txt` for third-party license details.
-
----
-
-## ⚡ Contact
-
-For questions, issues, or contributions, open an issue or contact the maintainers via GitHub.
-
----
-
 **Enjoy evaluating perception robustness with PCD!**
 
 [1]: https://arxiv.org/abs/2506.09217?utm_source=chatgpt.com "Perception Characteristics Distance: Measuring Stability and Robustness of Perception System in Dynamic Conditions under a Certain Decision Rule"
-[4]: https://github.com/Kaggle/kaggle-api/blob/master/kaggle/api/kaggle_api_extended.py?utm_source=chatgpt.com "kaggle-api/kaggle/api/kaggle_api_extended.py at main - GitHub"
+[2]: [https://github.com/Kaggle/kaggle-api/blob/master/kaggle/api/kaggle_api_extended.py?utm_source=chatgpt.com "kaggle-api/kaggle/api/kaggle_api_extended.py at main - GitHub"](https://www.kaggle.com/datasets/datadrivenwheels/sensorrainfall)
