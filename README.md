@@ -1,7 +1,7 @@
 # Perception Characteristics Distance (PCD)
 
 **“Perception Characteristics Distance: Measuring Stability and Robustness of Perception System in Dynamic Conditions under a Certain Decision Rule”**
-Boyu Jiang, Liang Shi, Zhengzhi Lin, Loren Stowe, Feng Guo ([ArXiv.org][1])
+Boyu Jiang, Liang Shi, Zhengzhi Lin, Loren Stowe, Feng Guo ([ArXiv][1])
 
 This repository provides the official Python implementation of the Perception Characteristics Distance (PCD), a metric designed to evaluate the reliable detection range of perception systems under dynamic real-world conditions (e.g. varying weather), along with the associated [**SensorRainFall**][2] dataset.
 
