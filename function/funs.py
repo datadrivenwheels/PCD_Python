@@ -171,8 +171,8 @@ def work_distance(x, y, change_points, title, weather, prob_threshold=0.5, y_thr
                                              scale=1e-10)  # Small non-zero value
     
     # Calculate work distance
-    valid_x = x[probs <= prob_threshold]
-    max_x = np.min(valid_x) if valid_x.size > 0 else None
+    valid_x = x[probs >= prob_threshold]
+    max_x = np.max(valid_x) if valid_x.size > 0 else 0
     
     if show_plot:
         plt.figure(figsize=(12, 6))
