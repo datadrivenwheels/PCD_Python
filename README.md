@@ -1,7 +1,7 @@
-# Perception Characteristics Distance (PCD)
+# Perception Characteristics Distance (PCD) - CVPR 2026
 
 **“Perception Characteristics Distance: Measuring Stability and Robustness of Perception System in Dynamic Conditions under a Certain Decision Rule”**
-Boyu Jiang, Liang Shi, Zhengzhi Lin, Loren Stowe, Feng Guo ([ArXiv][1])
+Boyu Jiang, Liang Shi, Zhengzhi Lin, Lanxin Xiang, Loren Stowe, Feng Guo ([ArXiv][1])
 
 This repository provides the official Python implementation of the Perception Characteristics Distance (PCD), a metric designed to evaluate the reliable detection range of perception systems under dynamic real-world conditions (e.g. varying weather), along with the associated [**SensorRainFall**][2] dataset.
 
@@ -9,7 +9,7 @@ This repository provides the official Python implementation of the Perception Ch
 
 ## 🚗 Abstract
 
-The performance of perception systems in autonomous driving systems (ADS) is strongly influenced by object distance, scene dynamics, and environmental conditions such as weather. AI-based perception outputs are inherently stochastic, with variability driven by these external factors, while traditional evaluation metrics remain static and event-independent, failing to capture fluctuations in confidence over time. In this work, we introduce the Perception Characteristics Distance (PCD) -- a novel evaluation metric that quantifies the farthest distance at which an object can be reliably detected, incorporating uncertainty in model outputs. To support this, we present the SensorRainFall dataset, collected on the Virginia Smart Road using a sensor-equipped vehicle (cameras, radar, LiDAR) under controlled daylight-clear and daylight-rain scenarios, with precise ground-truth distances to the target objects. Statistical analysis reveals the presence of change points in the variance of detection confidence score with distance. By averaging the PCD values across a range of detection quality thresholds and probabilistic thresholds, we compute the mean PCD (mPCD), which captures the overall perception characteristics of a system with respect to detection distance. Applying state-of-the-art perception models shows that mPCD captures meaningful reliability differences under varying weather conditions -- differences that static metrics overlook. PCD provides a principled, distribution-aware measure of perception performance, supporting safer and more robust ADS operation, while the SensorRainFall dataset offers a valuable benchmark for evaluation. 
+The safety of autonomous driving systems (ADS) depends on accurate perception across distance and driving conditions. The outputs of AI perception algorithms are stochastic, which has a major impact on decision making and safety outcomes, including time-to-collision estimation. However, current perception evaluation metrics do not reflect the stochastic nature of perception algorithms. We therefore introduce the Perception Characteristics Distance (PCD), a novel metric incorporating model output uncertainty as represented by the farthest distance at which an object can be reliably detected. To represent a system’s overall perception capability in terms of reliable detection distance, we used the averaged PCD values across multiple detection quality and probabilistic thresholds to produce the average PCD (aPCD). For empirical validation, we present the SensorRainFall dataset, collected on the Virginia Smart Roads using a sensor-equipped vehicle (cameras, radar, and LiDAR) controlled under different weather (clear and rainy) and illumination conditions (daylight, streetlight, and night). The dataset includes ground-truth distances, bounding boxes, and segmentation masks for target objects. Experiments with state-of-theart models show that aPCD captures meaningful differences across weather, daylight, and illumination conditions, which traditional evaluation metrics fail to reflect. PCD provides an uncertainty-aware measure of perception performance, supporting safer and more robust ADS operation, while the SensorRainFall dataset offers a valuable benchmark for evaluation. 
 
 ---
 
@@ -17,9 +17,9 @@ The performance of perception systems in autonomous driving systems (ADS) is str
 ## 🎯 Key Features
 
 * 🔍 **PCD Computation**: Implements heteroscedastic modeling of IoU×confidence vs. distance using penalized B‑spline regression and variance change-point detection.
-* 📈 **mPCD Evaluation**: Iterates across threshold pairs ($y_t$, $p_t$) to compute mPCD, enabling a comprehensive reliability profile.
+* 📈 **aPCD Evaluation**: Iterates across threshold pairs ($y^thres$, $p^thres$) to compute aPCD, enabling a comprehensive reliability profile.
 * ☔ **SensorRainFall Support**: Processes data from clear and rainy driving scenarios for performance analysis.
-* 📊 **Model Comparison**: Facilitates evaluation of various object detection models (e.g., Deformable DETR, YOLOX) under different environmental conditions.
+* 📊 **Model Comparison**: Facilitates evaluation of various object detection, instance segmentation, and object tracking models (e.g., Deformable DETR, YOLOX) under different environmental conditions.
 
 ---
 
