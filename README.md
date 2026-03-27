@@ -17,7 +17,7 @@ The safety of autonomous driving systems (ADS) depends on accurate perception ac
 ## 🎯 Key Features
 
 * 🔍 **PCD Computation**: Implements heteroscedastic modeling of IoU×confidence vs. distance using penalized B‑spline regression and variance change-point detection.
-* 📈 **aPCD Evaluation**: Iterates across threshold pairs ($y^thres$, $p^thres$) to compute aPCD, enabling a comprehensive reliability profile.
+* 📈 **aPCD Evaluation**: Iterates across threshold pairs ($y^{thres}$, $p^{thres}$) to compute aPCD, enabling a comprehensive reliability profile.
 * ☔ **SensorRainFall Support**: Processes data from clear and rainy driving scenarios for performance analysis.
 * 📊 **Model Comparison**: Facilitates evaluation of various object detection, instance segmentation, and object tracking models (e.g., Deformable DETR, YOLOX) under different environmental conditions.
 
