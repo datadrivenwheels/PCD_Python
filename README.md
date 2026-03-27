@@ -48,10 +48,10 @@ pip install -r requirements.txt
 If using this work, please cite:
 
 ```
-@misc{jiang2025perceptioncharacteristicsdistancemeasuring,
+@misc{jiang2026perceptioncharacteristicsdistancemeasuring,
       title={Perception Characteristics Distance: Measuring Stability and Robustness of Perception System in Dynamic Conditions under a Certain Decision Rule}, 
-      author={Boyu Jiang and Liang Shi and Zhengzhi Lin and Loren Stowe and Feng Guo},
-      year={2025},
+      author={Boyu Jiang and Liang Shi and Zhengzhi Lin and Lanxin Xiang and Loren Stowe and Feng Guo},
+      year={2026},
       eprint={2506.09217},
       archivePrefix={arXiv},
       primaryClass={cs.RO},
