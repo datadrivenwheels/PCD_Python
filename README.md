@@ -1,7 +1,7 @@
 # Perception Characteristics Distance (PCD) - CVPR 2026
 
 **“Perception Characteristics Distance: Measuring Stability and Robustness of Perception System in Dynamic Conditions under a Certain Decision Rule”**
-Boyu Jiang, Liang Shi, Zhengzhi Lin, Lanxin Xiang, Loren Stowe, Feng Guo ([ArXiv][1], [**YouTube**][3])
+Boyu Jiang, Liang Shi, Zhengzhi Lin, Lanxin Xiang, Loren Stowe, Feng Guo ([Full paper][1], [**YouTube**][3])
 
 This repository provides the official Python implementation of the Perception Characteristics Distance (PCD), a metric designed to evaluate the reliable detection range of perception systems under dynamic real-world conditions (e.g. varying weather), along with the associated [**SensorRainFall**][2] dataset.
 
@@ -63,6 +63,6 @@ If using this work, please cite:
 
 **Enjoy evaluating perception robustness with PCD!**
 
-[1]: https://arxiv.org/abs/2506.09217
+[1]: https://openaccess.thecvf.com/content/CVPR2026/html/Jiang_Perception_Characteristics_Distance_Measuring_Stability_and_Robustness_of_Perception_System_CVPR_2026_paper.html
 [2]: https://www.kaggle.com/datasets/datadrivenwheels/sensorrainfall
 [3]: https://www.youtube.com/watch?v=DysnzJKd6H8
